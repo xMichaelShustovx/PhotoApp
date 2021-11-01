@@ -55,12 +55,29 @@ extension LoginViewController: FUIAuthDelegate {
             
             // Got a user
             // Check on the database side if user has a profile
-            
-            // If not, go to create profile view controller
-            
-            // If so, to tab bar controller
-            
+            UserService.retrieveProfile(userId: user.uid) { user in
+                
+                if user == nil {
+                    // If not, go to create profile view controller
+                    self.performSegue(withIdentifier: Constants.Storyboard.profileSegue, sender: self)
+                    	
+                }
+                else {
+                    
+                    // If so, to tab bar controller
+                    // Create an instance of the tab bar controller
+                    let tabBarVC = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.tabBarController)
+                    
+                    guard tabBarVC != nil else {
+                        return
+                    }
+                    
+                    // Set it as the root view controller of the window
+                    self.view.window?.rootViewController = tabBarVC
+                    self.view.window?.makeKeyAndVisible()
+                    
+                }
+            }
         }
     }
-    
 }

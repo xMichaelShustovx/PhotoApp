@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5207F89E272FF5AD00299608 /* PhotoUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5207F89D272FF5AD00299608 /* PhotoUser.swift */; };
+		5207F8A0272FF5F800299608 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5207F89F272FF5F800299608 /* UserService.swift */; };
+		5207F8A2272FFF3200299608 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5207F8A1272FFF3200299608 /* Constants.swift */; };
 		5249B73A272D640B00C8A1A6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5249B739272D640B00C8A1A6 /* LoginViewController.swift */; };
 		5249B73C272D65A800C8A1A6 /* CreateProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5249B73B272D65A800C8A1A6 /* CreateProfileViewController.swift */; };
 		5249B73E272D6C3D00C8A1A6 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5249B73D272D6C3D00C8A1A6 /* FeedViewController.swift */; };
@@ -23,6 +26,9 @@
 
 /* Begin PBXFileReference section */
 		4DA634EFF145A35C8742CC3C /* Pods-PhotoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoApp.debug.xcconfig"; path = "Target Support Files/Pods-PhotoApp/Pods-PhotoApp.debug.xcconfig"; sourceTree = "<group>"; };
+		5207F89D272FF5AD00299608 /* PhotoUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoUser.swift; sourceTree = "<group>"; };
+		5207F89F272FF5F800299608 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		5207F8A1272FFF3200299608 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		5249B739272D640B00C8A1A6 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		5249B73B272D65A800C8A1A6 /* CreateProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProfileViewController.swift; sourceTree = "<group>"; };
 		5249B73D272D6C3D00C8A1A6 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
@@ -55,6 +61,7 @@
 		5249B733272D632A00C8A1A6 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				5207F89F272FF5F800299608 /* UserService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -71,6 +78,7 @@
 		5249B735272D633F00C8A1A6 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				5207F8A1272FFF3200299608 /* Constants.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -85,6 +93,7 @@
 		5249B737272D635100C8A1A6 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				5207F89D272FF5AD00299608 /* PhotoUser.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -289,7 +298,10 @@
 			files = (
 				5249B73C272D65A800C8A1A6 /* CreateProfileViewController.swift in Sources */,
 				5249B73A272D640B00C8A1A6 /* LoginViewController.swift in Sources */,
+				5207F8A0272FF5F800299608 /* UserService.swift in Sources */,
 				5249B742272D6D0800C8A1A6 /* SettingsViewController.swift in Sources */,
+				5207F89E272FF5AD00299608 /* PhotoUser.swift in Sources */,
+				5207F8A2272FFF3200299608 /* Constants.swift in Sources */,
 				5249B73E272D6C3D00C8A1A6 /* FeedViewController.swift in Sources */,
 				52EB2AE2272C71FF00EA9AF3 /* AppDelegate.swift in Sources */,
 				52EB2AE4272C71FF00EA9AF3 /* SceneDelegate.swift in Sources */,
