@@ -12,6 +12,8 @@
 		5207F8A2272FFF3200299608 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5207F8A1272FFF3200299608 /* Constants.swift */; };
 		523AE57E2733D6E300FE4567 /* LocalStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523AE57D2733D6E300FE4567 /* LocalStorageService.swift */; };
 		523AE5802733F02100FE4567 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523AE57F2733F02100FE4567 /* MainTabBarController.swift */; };
+		523AE5822734010200FE4567 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523AE5812734010200FE4567 /* Photo.swift */; };
+		523AE5842734018F00FE4567 /* PhotoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523AE5832734018F00FE4567 /* PhotoService.swift */; };
 		5249B73A272D640B00C8A1A6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5249B739272D640B00C8A1A6 /* LoginViewController.swift */; };
 		5249B73C272D65A800C8A1A6 /* CreateProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5249B73B272D65A800C8A1A6 /* CreateProfileViewController.swift */; };
 		5249B73E272D6C3D00C8A1A6 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5249B73D272D6C3D00C8A1A6 /* FeedViewController.swift */; };
@@ -33,6 +35,8 @@
 		5207F8A1272FFF3200299608 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		523AE57D2733D6E300FE4567 /* LocalStorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStorageService.swift; sourceTree = "<group>"; };
 		523AE57F2733F02100FE4567 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		523AE5812734010200FE4567 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		523AE5832734018F00FE4567 /* PhotoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoService.swift; sourceTree = "<group>"; };
 		5249B739272D640B00C8A1A6 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		5249B73B272D65A800C8A1A6 /* CreateProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProfileViewController.swift; sourceTree = "<group>"; };
 		5249B73D272D6C3D00C8A1A6 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
@@ -67,6 +71,7 @@
 			children = (
 				5207F89F272FF5F800299608 /* UserService.swift */,
 				523AE57D2733D6E300FE4567 /* LocalStorageService.swift */,
+				523AE5832734018F00FE4567 /* PhotoService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -99,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				5207F89D272FF5AD00299608 /* PhotoUser.swift */,
+				523AE5812734010200FE4567 /* Photo.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -308,6 +314,8 @@
 				5207F8A0272FF5F800299608 /* UserService.swift in Sources */,
 				5249B742272D6D0800C8A1A6 /* SettingsViewController.swift in Sources */,
 				5207F89E272FF5AD00299608 /* PhotoUser.swift in Sources */,
+				523AE5842734018F00FE4567 /* PhotoService.swift in Sources */,
+				523AE5822734010200FE4567 /* Photo.swift in Sources */,
 				5207F8A2272FFF3200299608 /* Constants.swift in Sources */,
 				5249B73E272D6C3D00C8A1A6 /* FeedViewController.swift in Sources */,
 				52EB2AE2272C71FF00EA9AF3 /* AppDelegate.swift in Sources */,

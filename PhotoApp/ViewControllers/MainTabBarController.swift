@@ -88,8 +88,14 @@ extension MainTabBarController: UIImagePickerControllerDelegate & UINavigationCo
         // Check if there is an image selected
         if let selectedImage = selectedImage {
             
-            // Upload it
+            // Get a reference to the camera view controller
+            let cameraVC = self.selectedViewController as? CameraViewController
             
+            if let cameraVC = cameraVC {
+                
+                // Upload it
+                cameraVC.savePhoto(image: selectedImage)
+            }
         }
         
         // Dismiss the image picker
