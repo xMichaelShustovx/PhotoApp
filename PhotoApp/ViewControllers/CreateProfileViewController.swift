@@ -44,6 +44,10 @@ class CreateProfileViewController: UIViewController {
             if user != nil {
                 
                 // If so, go to the tab bar controller
+                
+                // Save the user to the local storage
+                LocalStorageService.saveUser(userId: user!.userId, username: user!.username)
+                
                 let tabBarVC = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.tabBarController)
                 
                 self.view.window?.rootViewController = tabBarVC
