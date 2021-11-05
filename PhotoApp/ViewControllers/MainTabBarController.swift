@@ -68,6 +68,13 @@ class MainTabBarController: UITabBarController {
         // Present the image picker
         present(imagePicker, animated: true, completion: nil)
     }
+    
+    func goToFeed() {
+        
+        // Switch the tab to the first one
+        selectedIndex = 0
+        
+    }
 }
 
 // MARK: - Image Picker Delegate Methods
