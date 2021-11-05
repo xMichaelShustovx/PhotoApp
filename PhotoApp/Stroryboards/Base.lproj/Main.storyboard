@@ -105,6 +105,48 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Gxh-XB-ctK">
                                 <rect key="frame" x="0.0" y="44" width="414" height="769"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PhotoCell" rowHeight="300" id="ACQ-ce-V03" customClass="PhotoCell" customModule="PhotoApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="300"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ACQ-ce-V03" id="k7h-6A-1KT">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="et1-cd-Ht5">
+                                                    <rect key="frame" x="40" y="31" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YcN-z5-W66">
+                                                    <rect key="frame" x="40" y="248" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6gI-Ul-HqI">
+                                                    <rect key="frame" x="40" y="62" width="334" height="176"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="6gI-Ul-HqI" firstAttribute="leading" secondItem="k7h-6A-1KT" secondAttribute="leadingMargin" constant="20" id="0X2-RA-c5Z"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="6gI-Ul-HqI" secondAttribute="trailing" constant="20" id="7jk-j3-LHY"/>
+                                                <constraint firstItem="6gI-Ul-HqI" firstAttribute="top" secondItem="et1-cd-Ht5" secondAttribute="bottom" constant="10" id="JOZ-K3-ALw"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="YcN-z5-W66" secondAttribute="bottom" constant="20" id="JXC-3h-iRg"/>
+                                                <constraint firstItem="YcN-z5-W66" firstAttribute="top" secondItem="6gI-Ul-HqI" secondAttribute="bottom" constant="10" id="ok4-jw-1Nu"/>
+                                                <constraint firstItem="YcN-z5-W66" firstAttribute="leading" secondItem="k7h-6A-1KT" secondAttribute="leadingMargin" constant="20" id="sfF-Kr-dk4"/>
+                                                <constraint firstItem="et1-cd-Ht5" firstAttribute="leading" secondItem="k7h-6A-1KT" secondAttribute="leadingMargin" constant="20" id="t1s-XG-q0f"/>
+                                                <constraint firstItem="et1-cd-Ht5" firstAttribute="top" secondItem="k7h-6A-1KT" secondAttribute="topMargin" constant="20" id="zgi-Td-dqg"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="dateLabel" destination="YcN-z5-W66" id="T1O-dA-qHr"/>
+                                            <outlet property="photoImageView" destination="6gI-Ul-HqI" id="TZt-AV-RKR"/>
+                                            <outlet property="usernameLabel" destination="et1-cd-Ht5" id="qwi-sb-fxW"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Dud-bD-9ae"/>

@@ -11,10 +11,21 @@ class FeedViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
+    var photos = [Photo]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // Call the PhotoService to retrive the photos
+        PhotoService.retrievePhotos { photos in
+            
+            // Set photos array
+            self.photos = photos
+            
+            // Reload table view
+            self.tableView.reloadData()
+        }
+        
     }
 
 }
