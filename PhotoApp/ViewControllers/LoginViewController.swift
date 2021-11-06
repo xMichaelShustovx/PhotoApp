@@ -9,11 +9,15 @@ import UIKit
 import FirebaseEmailAuthUI
 
 class LoginViewController: UIViewController {
+    
+    @IBOutlet weak var loginButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        loginButton.layer.cornerRadius = 10
+        
     }
 
     @IBAction func loginTapped(_ sender: Any) {

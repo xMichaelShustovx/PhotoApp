@@ -9,11 +9,14 @@ import UIKit
 import FirebaseEmailAuthUI
 
 class SettingsViewController: UIViewController {
-
+    
+    @IBOutlet weak var signoutButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        signoutButton.layer.cornerRadius = 10
     }
     
     @IBAction func signOutTapped(_ sender: Any) {

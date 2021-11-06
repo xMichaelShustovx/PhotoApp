@@ -10,7 +10,7 @@ import UIKit
 
 class ImageCacheService {
     
-    static var imageCache = [String : UIImage]()
+    private static var imageCache = [String : UIImage]()
     
     static func saveImage(url: String?, image: UIImage?) {
         

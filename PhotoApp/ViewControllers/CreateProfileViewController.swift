@@ -12,10 +12,14 @@ class CreateProfileViewController: UIViewController {
 
     @IBOutlet weak var usernameTextField: UITextField!
     
+    @IBOutlet weak var confirmButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        confirmButton.layer.cornerRadius = 10
+        
     }
 
     @IBAction func confirmTapped(_ sender: Any) {
